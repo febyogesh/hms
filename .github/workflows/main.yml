@@ -24,7 +24,13 @@ jobs:
       - uses: actions/checkout@v4
 
       # Runs a single command using the runners shell
-      - name: extracte data started
+      - name: extraction process started
         run: echo data extracted successfully
+
+      - name: trasform process started
+        run: echo raw data is convert into clean data
+
+      - name: loading is started
+        run: data loaded into ware house
 
       
