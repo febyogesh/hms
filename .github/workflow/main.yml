@@ -1,0 +1,22 @@
+#git hub actions for automate workflow
+
+name: "ETL Pipeline"
+
+#trigger
+on: 
+ push: 
+  branch: "main"
+
+jobs: 
+ 
+  extract-data: 
+
+    runs-on: "ubuntu-latest"
+    
+    steps:
+      - name: checkout code
+      - uses: actions/checkout@v1
+
+    #run commands
+      - name: "extract-data"
+      - run: "data is extracted sucessfully"
